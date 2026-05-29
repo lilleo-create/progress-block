@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="card">
+    <span class="card__title">Progress</span>
+    <div class="card__preview">
+      <div class="progress" id="progress">
+        <svg class="progress__svg" viewBox="0 0 120 120">
+          <circle class="progress__background" cx="60" cy="60" r="50" />
+          <circle class="progress__track" cx="60" cy="60" r="50" />
+        </svg>
+      </div>
+    </div>
+    <div class="card__controls">
+
+      <div class="control">
+        <input type="number" id="progressValue" min="0" max="100" value="60">
+        <label for="progressValue" class="control__label">Value</label>
+      </div>
+
+      <div class="control">
+        <label class="toggle">
+          <input type="checkbox" id="animateToggle">
+          <span class="toggle__slider"></span>
+        </label>
+        <label for="animateToggle" class="control__label">Animate</label>
+      </div>
+
+      <div class="control">
+        <label class="toggle">
+          <input type="checkbox" id="hideToggle">
+          <span class="toggle__slider"></span>
+        </label>
+        <label for="hideToggle" class="control__label">Hide</label>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
