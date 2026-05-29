@@ -18,3 +18,62 @@
 
   --animation-duration: 1.5s;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 100vh;
+  background-color: var(--color-bg);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight);
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  max-inline-size: 568px;
+  background-color: var(--color-card);
+  padding: 20px;
+}
+
+.card__title {
+  width: 100%;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.progress__background {
+  fill: none;
+  stroke: var(--color-track);
+  stroke-width: 8;
+}
+
+.progress__track {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 125;
+}
+
+.progress__svg {
+  inline-size: var(--progress-size);
+  block-size: var(--progress-size);
+}
+
+.card__preview {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__controls {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+}
