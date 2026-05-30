@@ -24,8 +24,26 @@ animateToggle.addEventListener('change', () => {
 
 hideToggle.addEventListener('change', () => {
   if (hideToggle.checked) {
-    progress.classList.add('progress--hidden'); 
+    progress.classList.add('progress--hidden');
   } else {
     progress.classList.remove('progress--hidden');
   }
 });
+
+const Progress = {
+  setValue(value) {
+    valueInput.value = value;
+    updateProgress();
+  },
+
+  setAnimated(bool) {
+    animateToggle.checked = bool;
+    animateToggle.dispatchEvent(new Event('change'));
+  },
+
+  setHidden(bool) {
+    hideToggle.checked = bool;
+    hideToggle.dispatchEvent(new Event('change'));
+  }
+}
+
