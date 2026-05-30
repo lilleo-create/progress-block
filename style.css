@@ -52,6 +52,7 @@ body {
 .card__title {
   width: 100%;
   font-size: 1.25rem;
+  padding-bottom: 16px;
 }
 
 .progress {
@@ -91,14 +92,11 @@ body {
   gap: 8px;
 }
 
-
 .card__controls {
   display: flex;
   flex-direction: column;  
   flex: 1;
-  align-items: center;
-  gap: 9px;
-  width: 100%;
+  gap: 8px;
 }
 
 .control__input{
