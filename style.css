@@ -13,6 +13,7 @@
   --color-border: #000;
 
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-base: 16px;
   --font-weight: 400;
 
   --progress-size: 100px;
@@ -62,9 +63,8 @@ body {
   fill: none;
   stroke: var(--color-primary);
   stroke-width: 8;
-  stroke-linecap: round;
   stroke-dasharray: 289;
-  stroke-dashoffset: 116;
+  stroke-linecap: round;
 }
 
 .progress__svg {
@@ -148,4 +148,23 @@ body {
 
 .toggle__checkbox:checked + .toggle__slider::before {
   transform: translateX(16px);
+}
+
+
+
+.progress--animated {
+  animation: spin var(--animation-duration) linear infinite
+}
+
+.progress--hidden {
+  display: none;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
