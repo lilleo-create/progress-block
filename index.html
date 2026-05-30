@@ -11,39 +11,41 @@
 
 <body>
   <div class="card">
-    <span class="card__title">Progress</span>
-    <div class="card__preview">
-      <div class="progress" id="progress">
-        <svg class="progress__svg" viewBox="0 0 100 100">
-          <circle class="progress__background" cx="50" cy="50" r="46" />
-          <circle class="progress__track" id="progressTrack" cx="50" cy="50" r="46" stroke-dasharray="289" stroke-dashoffset="116"
-            transform="rotate(-90 50 50)" />
-        </svg>
+    <div class="card__title">Progress</div>
+    <div class="card__body">
+      <div class="card__preview">
+        <div class="progress" id="progress">
+          <svg class="progress__svg" viewBox="0 0 100 100">
+            <circle class="progress__background" cx="50" cy="50" r="46" />
+            <circle class="progress__track" id="progressTrack" cx="50" cy="50" r="46" stroke-dasharray="289"
+              stroke-dashoffset="116" transform="rotate(-90 50 50)" />
+          </svg>
+        </div>
       </div>
-    </div>
-    <div class="card__controls">
+      <div class="card__controls">
 
-      <div class="control">
-        <input class="control__input" type="number" id="progressValue" min="0" max="100" value="60">
-        <label for="progressValue" class="control__label">Value</label>
+        <div class="control">
+          <input class="control__input" type="number" id="progressValue" min="0" max="100" value="60">
+          <label for="progressValue" class="control__label">Value</label>
+        </div>
+
+        <div class="control">
+          <label class="toggle">
+            <input class="toggle__checkbox" type="checkbox" id="animateToggle">
+            <span class="toggle__slider"></span>
+          </label>
+          <label for="animateToggle" class="control__label">Animate</label>
+        </div>
+
+        <div class="control">
+          <label class="toggle">
+            <input class="toggle__checkbox" type="checkbox" id="hideToggle">
+            <span class="toggle__slider"></span>
+          </label>
+          <label for="hideToggle" class="control__label">Hide</label>
+        </div>
+
       </div>
-
-      <div class="control">
-        <label class="toggle">
-          <input class="toggle__checkbox" type="checkbox" id="animateToggle">
-          <span class="toggle__slider"></span>
-        </label>
-        <label for="animateToggle" class="control__label">Animate</label>
-      </div>
-
-      <div class="control">
-        <label class="toggle">
-          <input class="toggle__checkbox" type="checkbox" id="hideToggle">
-          <span class="toggle__slider"></span>
-        </label>
-        <label for="hideToggle" class="control__label">Hide</label>
-      </div>
-
     </div>
   </div>
 </body>
