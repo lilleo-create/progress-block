@@ -50,9 +50,9 @@ body {
 }
 
 .card__title {
-  width: 100%;
-  font-size: 1.25rem;
   padding-bottom: 16px;
+  font-size: 1.25rem;
+  inline-size: 100%;
 }
 
 .progress {
@@ -104,7 +104,7 @@ body {
   border-radius: 50px;
   padding: 4px 8px;
   text-align: center;
-  max-inline-size: 32px;
+  max-inline-size: 40px;
 }
 
 .control__input::-webkit-outer-spin-button,
@@ -122,7 +122,7 @@ body {
 .toggle {
   position: relative;
   cursor: pointer;
-  inline-size: 32px;
+  inline-size: 40px;
   block-size: 22px;
 }
 
@@ -166,7 +166,7 @@ body {
 
 @media (orientation: portrait) {
   .card {
-    width: 100%;
+    inline-size: 100%;
   }
 
   .card__body {
@@ -188,8 +188,8 @@ body {
   }
 
   .progress__svg {
-    width: 120px;
-    height: 120px;
+    inline-size: 120px;
+    block-size: 120px;
   }
 
   .card__controls {
