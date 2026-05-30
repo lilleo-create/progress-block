@@ -2,6 +2,7 @@
 Прототип блока Progress для мобильных web-приложений
 
 ## Демо 
+[Открыть демо](https://lilleo-create.github.io/progress-block/)
 
 ## Функциональность
 - Normal — управление размером дуги через Value (0-100)
