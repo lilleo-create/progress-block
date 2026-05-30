@@ -51,8 +51,10 @@ body {
 
 .card__title {
   padding-bottom: 16px;
+  font-weight: var(--font-weight);
   font-size: 1.25rem;
   inline-size: 100%;
+
 }
 
 .progress {
@@ -176,7 +178,7 @@ body {
   }
 
   .control {
-    width: 120px;
+    inline-size: 120px;
   }
 
   .card__title {
